@@ -1,1 +1,2 @@
-find . -name '*.sh' -print | tr -d ".sh"
+#!/bin/bash
+find . -name '*.sh' -exec  basename -s .sh {} \;
